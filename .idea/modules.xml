@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/P04-RevisionNotes.iml" filepath="$PROJECT_DIR$/P04-RevisionNotes.iml" group="P04-RevisionNotes" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="P04-RevisionNotes/app" />
-    </modules>
-  </component>
-</project>
