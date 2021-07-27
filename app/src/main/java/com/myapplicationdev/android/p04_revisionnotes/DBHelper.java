@@ -12,18 +12,24 @@ import java.util.ArrayList;
 public class DBHelper extends SQLiteOpenHelper {
 
 	//TODO Define the Database properties
-	private static final String DATABASE_NAME = "";
-	private static final int DATABASE_VERSION = ;
+	private static final String DATABASE_NAME = "note.db";
+	private static final int DATABASE_VERSION = 1;
 
+	private static final String TABLE_NOTE = "note";
+	private static final String COLUMN_ID = "_id";
+	private static final String COLUMN_NOTE = "noteContent";
+	private static final String COLUMN_STARS = "stars";
 
 	public DBHelper(Context context) {
+
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		//TODO CREATE TABLE Note
-
+		String createTableSql = "CREATE TABLE " + TABLE_NOTE + "(" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_NOTE + " TEXT," + COLUMN_STARS + " INTEGER )";
+		db.execSQL(createTableSql);
+		Log.i("info", "created tables");
 	}
 
 	@Override
